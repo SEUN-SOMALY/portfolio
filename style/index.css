@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --main-font : "Arvo";
+}
+.main-font{
+    font-family:"Arvo";
+}
+.navbar-container{
+    height: 98vh;
+    width: 100%;
+    background-color: rgb(46, 85, 73);
+}
+.navbar-container .navbar-menu{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(75, 128, 128);
+    border-bottom: 1px solid rgb(186, 223, 166) ;
+}
+.navbar-container .row> *{
+    height: 100%;
+}
+.navbar-menu .navbar li{
+    height: 100%;
+    /* margin-top: 1%; */
+    padding: 10px 90px;
+    /* background-color: aqua; */
+}
+.navbar li a{
+    /* margin-left: 5%; */
+    color: rgb(77, 6, 85);
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+.navbar li a::before,a::after{
+    content: " ";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+}
+.navbar li a::before{
+    background-color: rgb(121, 6, 108);
+    top: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: 0.4s;
+}
+.navbar li a::after{
+    background-color: rgb(39, 37, 66);
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 0.4s;
+}
+.navbar li:hover a::before,.navbar li:hover a::after{
+    transform: scaleX(100%);
+    transition: 0.4s;
+}
+.hero-container{
+    width: 100%;
+    height: 90%;
+    /* margin-left: 10px; */
+    background-color: rgb(3, 48, 36);
+    /* border-radius: 10px; */
+    position: relative;
+    /* top: 5px; */
+    
+}
+.hero-container::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-image:url(/image/back.png);
+    position: absolute;
+    top: 0;
+    left: 0 ;
+    opacity: 0.3;
+    
+}
+.hero-container .row{
+    width: 200vh;
+    position: absolute;
+    /* margin-top: 5%; */
+    /* margin-top: 5%; */
+    margin-left: 7%;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    background-color: none;
+}
+.img img{
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+}
+.row .text{
+    
+    height: 50%;
+    width: 50%;
+    margin-top: 15%;
+    margin-left: 25%;
+}
+.row .text .text1{
+    
+    color: rgb(176, 211, 242);
+    position: absolute;
+}
+.row .text .text2{
+    margin-top: 5%;
+    position: absolute;
+    color: rgb(208, 251, 200);
+    /* color: rgb(233, 196, 246); */
+}
+.row .text .text3{
+    position: absolute;
+    margin-top: 12%;
+    color: aliceblue;
+    margin-right: 20%;
+}
+.btn{
+    margin-left: 25%;
+    height: 50px;
+    width: 150px;
+}
+.row .img .round-image {
+    width: 100%; /* Set the width */
+    margin-top: 25%;
+    height: 75%; /* Set the height to match the width for a square image */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover;
+   
+}
+.navbar-menu .row img{
+    height: 100%;
+    width: 100%;
+}
