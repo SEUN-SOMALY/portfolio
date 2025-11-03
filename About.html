@@ -1,68 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
-    <link rel="stylesheet" href="style/About.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - About</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
-
-    <div class="navbar-container">
-        <div class="navbar-menu">
-            <div class="row h-100 justify-content-between">
-                <div class="col-3 d-flex align-items-center justify-content-center ">
-                    <img src="image/Name (1).png" alt="">
-                </div>
-                <div class="col-8">
-                    <ul class="navbar h-100 list-unstyled d-flex ">
-                        <li ><a href="index.html">HOME</a></li>
-                        <li ><a href="#">ABOUT</a></li>
-                        <li ><a href="Skills.html">SKILLS</a></li>
-                        <li ><a href="Contact.html">CONTACT</a></li>
-                    </ul>
-                </div>
-            </div>
+  <!-- Navbar -->
+  <div class="navbar-container">
+    <div class="navbar-menu">
+      <div class="row h-100 justify-content-between">
+        <div class="col-3 d-flex align-items-center justify-content-center">
+          <img src="image/Name (1).png" alt="">
         </div>
-        <div class="hero-container">
-            <div class="row h-75 ">
-                <div class="col-3 bg-none rounded-circle mt-5 ms-5">
-                    <div class="img ">
-                        <img src="/image/profile-removebg-preview.png" alt="" class="round-image border border-success border border-5">
-                    </div>
-                </div>
-                <div class="col-7 mt-5 ms-5">
-                    <div class="about-container">
-                        <h5 data-aos="fade-in" data-aos-duration="1000"  class="text mt-5">Hi, I'm Seun Somaly, a passionate web developer dedicated to creating seamless and engaging online experiences.<span></span></h5>
-                        <p data-aos="fade-outside" data-aos-duration="3000"  class="text-about">With a solid background in front-end and back-end development, I specialize in building modern, responsive websites and web applications that are both visually appealing and user-friendly. My technical skills include HTML, CSS, JavaScript, React, Node.js, and other popular web development frameworks and tools.
-
-                            I thrive on problem-solving and love transforming complex ideas into simple, functional digital solutions. Whether it's crafting intuitive user interfaces or optimizing back-end systems for performance, I focus on delivering high-quality results. I am particularly passionate about creating mobile-first designs and ensuring that the websites I build are responsive across all devices.
-                            Functions are a fundamental part of programming and are used to organize code, reduce redundancy, and improve maintainability. In the context of web development, functions are often used in client-side programming (JavaScript) and server-side programming (like Python, PHP, or Node.js) to handle various tasks, such as processing user inputs, interacting with databases, or manipulating elements on a webpage.
-                            
-                            
-                            
-                        </p>
-                        <!-- <button class="btn btn-outline-danger">PORTFOLIO</button> -->
-                    </div>
-                    
-                    
-                </div>
-            </div>
+        <div class="col-8">
+          <ul class="navbar h-100 list-unstyled d-flex">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Skills.html">SKILLS</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+          </ul>
         </div>
+      </div>
     </div>
 
+    <!-- About Section -->
+    <div class="hero-container">
+      <div class="row h-75 align-items-center">
+        <div class="col-3 text-center">
+          <img src="image/profile.png" alt="" class="round-image border border-success border-5">
+        </div>
+        <div class="col-7">
+          <div class="about-container">
+            <h5 data-aos="fade-in" data-aos-duration="1000">
+              Hi, I'm Seun Somaly, a passionate web developer dedicated to creating seamless and engaging online experiences.
+            </h5>
+            <p data-aos="fade-up" data-aos-duration="2000">
+              With a solid background in front-end and back-end development, I specialize in building modern, responsive websites and web applications that are visually appealing and user-friendly. My skills include HTML, CSS, JavaScript, React, Node.js, and other web frameworks. I focus on mobile-first, responsive design and high-quality results.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-
-
-    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-   AOS.init();
-</script>
 </html>

@@ -3,59 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
-   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <title>PORTFOLIO</title> 
+    <title>Portfolio - Somaly</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style/index.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style/index.css"> 
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar-container">
         <div class="navbar-menu">
-            <div class="row h-100 justify-content-between">
-                <div class="col-3 d-flex align-items-center justify-content-center ">
-                    <img src="image/Name (1).png" alt="">
-                </div>
-                <div class="col-8 ">
-                    <ul class="navbar h-100 list-unstyled d-flex ">
-                        <li ><a href="#" id="home">HOME</a></li>
-                        <li ><a href="About.html" id="about">ABOUT</a></li>
-                        <li ><a href="Skills.html" id="skills">SKILLS</a></li>
-                        <li ><a href="Contact.html" id="contact">CONTACT</a></li>
-                    </ul>
-                </div>
-            </div>
+            <img src="image/Name (1).png" alt="Logo" class="logo">
+            <ul class="navbar h-100 list-unstyled d-flex">
+                <li><a href="#home-section" class="active">HOME</a></li>
+                <li><a href="#about-section">ABOUT</a></li>
+                <li><a href="#skills-section">SKILLS</a></li>
+                <li><a href="#contact-section">CONTACT</a></li>
+            </ul>
         </div>
-        <div class="hero-container">
-            <div class="row h-75 ">
-                <div class="col-3 bg-none rounded-circle  mt-5 ms-5">
-                    <div class="img ">
-                        <img src="image/profile-removebg-preview.png" alt="" class="round-image border border-success border border-5">
-                    </div>
-                </div>
-                <div class="col-7 mt-5 ms-5">
-                    <div  class="text main-font"><h1 data-aos="fade-right" data-aos-duration="2000" class="text1 ">Hello,</h1>
-                         
-                        
-                        
-                        <h1 data-aos="fade-left" data-aos-duration="2000" class="text2">My Name Is<span class="text-in"><h1>Somaly .....</h1></span></h1>
-                        <h6 data-aos="fade-up" data-aos-duration="2000" class="text3 ">Quis maxime in quam, officiis, repellat soluta eum consequatur minima numquam aut iure nihil libero.</h6>                 
-                    </div>
-                    <button data-aos="fade-up" data-aos-duration="2000" class="btn btn-outline-light mt-2">PORTFOLIO</button>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-<script src="script/index.js"></script>
-</body>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-   AOS.init();
-</script>
-</html>
 
+        <div class="hero-container" id="home-section">
+            <div class="row w-100 h-75 align-items-center justify-content-center">
+                
+                <div class="col-lg-6 col-md-10 order-md-2 order-lg-1">
+                    <div class="hero-text">
+                        <h1 data-aos="fade-right" data-aos-duration="2000">Hello,</h1>
+                        <h1 data-aos="fade-left" data-aos-duration="2000">My Name Is <span class="text-accent">Somaly</span></h1>
+                        <p data-aos="fade-up" data-aos-duration="2000" class="lead text-muted">
+                            Quis maxime in quam, officiis, repellat soluta eum consequatur minima numquam aut iure nihil libero.
+                        </p>
+                        <a href="#contact-section" data-aos="fade-up" data-aos-duration="2000" class="btn btn-primary btn-lg mt-3">HIRE ME</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-10 text-center order-md-1 order-lg-2 mb-4 mb-lg-0">
+                    <div class="hero-image">
+                        <img src="image/profile.png" alt="Profile Image" class="round-image border border-success border-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-container" id="about-section">
+            <div class="row w-100 h-75 align-items-center justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="about-container text-center">
+                        <h2 class="text-white mb-4 display-5" data-aos="fade-down">About Me</h2> 
+                        <h5 data-aos="fade-in" data-aos-duration="1000" class="mb-4">
+                            Hi, I'm Seun Somaly, a passionate web developer dedicated to creating seamless and engaging online experiences.
+                        </h5>
+                        <p data-aos="fade-up" data-aos-duration="2000" class="text-center">
+                            With a solid background in front-end and back-end development, I specialize in building modern, responsive websites and web applications that are visually appealing and user-friendly. My skills include HTML, CSS, JavaScript, React, Node.js, and other web frameworks. I focus on mobile-first, responsive design and high-quality results.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-container" id="skills-section">
+            <div class="row w-100 h-75 align-items-center justify-content-center">
+                <div class="col-lg-10 col-md-10">
+                    <h2 class="text-center mb-5 display-5" data-aos="fade-in" data-aos-duration="2000">My Skills</h2>
+                    <div class="row justify-content-center">
+                        
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100" data-aos="fade-right" data-aos-duration="2000">
+                                <h6 class="text-center">UX/UI Design</h6>
+                                <p>Context of product development and business strategy can be seen through various lenses...</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100" data-aos="fade-zoom-in" data-aos-duration="2000">
+                                <h6 class="text-center">Web Design</h6>
+                                <p>Positioning refers to how elements are placed and arranged on a webpage...</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100" data-aos="fade-left" data-aos-duration="2000">
+                                <h6 class="text-center">Backend Development</h6>
+                                <p>Responsible for server-side logic, databases, and infrastructure that power web applications.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-container" id="contact-section">
+            <div class="row w-100 h-75 justify-content-center align-items-center">
+                
+                <div class="col-lg-5 col-md-10 mb-5 mb-lg-0 text-center text-lg-start">
+                    <h2 class="mb-4 display-5"><hr>Contact Me<hr></h2>
+                    <h4 class="mb-4">Let's work together</h4>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    
+                    <div class="contact-info-list mb-4">
+                         <p class="mb-2 d-flex align-items-center justify-content-center justify-content-lg-start">
+                             <button class="btn btn-sm rounded-circle btn-outline-info me-2"><i class="fa-solid fa-paper-plane"></i></button> 
+                             @Lilyback
+                        </p>
+                         <p class="mb-2 d-flex align-items-center justify-content-center justify-content-lg-start">
+                             <button class="btn btn-sm rounded-circle btn-outline-info me-2"><i class="fa-solid fa-phone"></i></button> 
+                             096 94 56 042
+                        </p>
+                    </div>
+
+                    <div class="all-btn d-flex mt-4 justify-content-center justify-content-lg-start"> 
+                        <button class="btn btn-lg rounded-circle btn-outline-info me-3"><i class="fa-brands fa-facebook"></i></button>
+                        <button class="btn btn-lg rounded-circle btn-outline-info me-3"><i class="fa-brands fa-square-instagram"></i></button>
+                        <button class="btn btn-lg rounded-circle btn-outline-info me-3"><i class="fa-brands fa-square-twitter"></i></button>
+                        <button class="btn btn-lg rounded-circle btn-outline-info me-3"><i class="fa-brands fa-tiktok"></i></button>
+                    </div>
+                </div>
+                
+                <div class="h-75 col-lg-5 col-md-10">
+                    <div class="form border border-3 p-4">
+                        <h5 class="us text-center mb-4">Contact Us<hr></h5>
+                        <form class="form-container" action="/submit_form" method="POST">
+                            <div class="mb-3">
+                                <label for="name">Enter Your Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email">Enter Your Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <!-- <div class="mb-3">
+                                <label for="subject">Enter Your Subject:</label>
+                                <input type="text" id="subject" name="subject"  required>
+                            </div> -->
+                            <div class="mb-3">
+                                <label for="message">Enter Your Message:</label>
+                                <textarea id="message" name="message" rows="2" required></textarea>
+                            </div>
+                            <button class="btn btn-outline-success w-100">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+</body>
+</html>
